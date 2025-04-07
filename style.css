@@ -19,7 +19,32 @@ header {
     background-color: lightgreen;
     position: absolute;
     height: 60px;
-    width: 100%;
+    width: calc(100% - 160px);
+    position: fixed;
+    top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header menu {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+header li {
+    padding: 4px 8px;
+    transition: .5s;
+}
+
+header li:hover {
+    background-color: #FBDDC1;
+    box-shadow: 0 4px 6px #0004;
+}
+
+body {
+    padding: 0 80px;
+    font-family: "Poppins", sans-serif;
 }
 
 main {
