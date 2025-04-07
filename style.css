@@ -15,8 +15,13 @@ li {
     list-style: none;
 }
 
+:root {
+    --secundary-color: #FBDDC1;
+    --primary-color: #F07807;
+    --defult-shadow: 0 4px 6px #0004;
+}
+
 header {
-    background-color: lightgreen;
     position: absolute;
     height: 60px;
     width: calc(100% - 160px);
@@ -24,6 +29,7 @@ header {
     top: 60px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header menu {
@@ -38,8 +44,17 @@ header li {
 }
 
 header li:hover {
-    background-color: #FBDDC1;
-    box-shadow: 0 4px 6px #0004;
+    background-color: var(--secundary-color);
+    box-shadow: var(--defult-shadow);
+}
+
+header button {
+    background-color: var(--secundary-color);
+    border: none;
+    border-radius: 12px;
+    height: 48px;
+    width: 120px;
+    box-shadow: var(--defult-shadow);
 }
 
 body {
