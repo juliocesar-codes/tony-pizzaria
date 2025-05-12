@@ -243,10 +243,119 @@ section {
 }
 
 .servicos {
-    background-color: lightpink;
+    height: auto;
+    background-color: var(--secundary-color);
+    display: flex;
+    padding-block: 64px;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.servico-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servico-card {
+    width: 400px;
+    height: 500px;
+    border: 2px solid var(--primary-color);
+    border-radius: 24px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servico-card img {
+    /* Cria sombra em áreas visiveis */
+    filter: drop-shadow(var(--default-shadow));
+}
+
+.servico-card h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-shadow: var(--default-shadow);
+}
+
+.servico-card p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: var(--default-shadow);
 }
 
 footer {
     height: 525px;
-    background-color: tomato;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fafafa;
+    align-items: center;
+}
+
+.contatos-container {
+    display: flex;
+    flex-grow: 1;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.contato-item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+    gap: 16px;
+}
+
+.contato-item menu {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    gap: 16px;
+}
+
+.contato-item li {
+    display: flex;
+    gap: 16px;
+}
+
+.social a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #fafafa;
+    display: grid;
+    place-content: center;
+    transition: 0.5s;
+}
+
+.social a:hover {
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+}
+
+.copyrigth {
+    height: 72px;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    font-size: 0.7rem;
+    font-weight: 300;
+    font-style: italic;
+    border-top: 1px solid var(--secundary-color);
+}
+
+.contato-item logo {
+    justify-content: center;
+    padding-top: 0;
+}
+
+.contato-item h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
