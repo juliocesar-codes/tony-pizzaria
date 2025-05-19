@@ -15,7 +15,7 @@ li {
     list-style: none;
 }
 
-:root {
+ :root {
     --primary-color: #F07807;
     --secundary-color: #FBDDC1;
     --default-shadow: 0 4px 6px #0004;
@@ -441,5 +441,64 @@ footer {
     }
     .copyrigth {
         margin-bottom: 64px;
+    }
+}
+
+@media(max-width:768px) {
+    .home {
+        background-image: url(/img/background-mobile.png);
+    }
+    header {
+        width: 100%;
+        position: fixed;
+        top: 1px;
+        padding: 0;
+    }
+    .hero img {
+        display: none;
+    }
+    .hero h2 {
+        font-size: 32px;
+        width: 287px;
+        height: 192px;
+        font-style: italic;
+        color: #fafafa;
+    }
+    .hero span {
+        background-color: #fafafa;
+    }
+    .cardapio {
+        padding: 0;
+    }
+    .cardapio h4 {
+        width: 100vw;
+    }
+    .cardapio a {
+        display: none;
+    }
+    .produto:nth-child(2),
+    .produto:nth-child(3),
+    .produto:nth-child(4) {
+        display: none;
+    }
+    .servicos {
+        padding: 0;
+    }
+    .servico-card {
+        flex-direction: column;
+        width: 313px;
+    }
+    .servico-card p {
+        display: none;
+    }
+    .contato-item.social menu {
+        flex-direction: row;
+    }
+    .cardapio-item.bebidas .produto:nth-child(n+2) {
+        display: none;
+    }
+    .contatos-container {
+        flex-wrap: nowrap;
+        margin: 20px;
     }
 }
