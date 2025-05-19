@@ -367,8 +367,79 @@ footer {
     font-weight: 500;
 }
 
-@media (max width:1024px) {
-    body {
+@media (max-width:1024px) {
+    header {
+        position: absolute;
+        background-color: initial;
+    }
+    header menu {
+        height: 64px;
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: var(--primary-color);
+        color: #fafafa;
+        justify-content: space-evenly;
+    }
+    .home {
+        grid-template-columns: none;
+    }
+    .home .container-produtos {
         display: none;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container-produtos {
+        gap: 24px;
+    }
+    .produto {
+        width: 100%;
+    }
+    .produto img {
+        width: 100%;
+    }
+    .produto:nth-child(3),
+    .produto:nth-child(4) {
+        display: none;
+    }
+    .cardapio-item.bebidas .produto:nth-child(n+4) {
+        display: none;
+    }
+    .cardapio-item.bebidas img {
+        width: auto;
+    }
+    .servico-item {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .servico-card {
+        width: 100%;
+        height: 260px;
+        flex-wrap: wrap;
+    }
+    .servico-card p {
+        width: 320px;
+    }
+    .contato-item.links {
+        display: none;
+    }
+    .contatos-container {
+        height: 400px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .social li {
+        justify-content: end;
+    }
+    .contato-item {
+        padding: 32px;
+    }
+    .copyrigth {
+        margin-bottom: 64px;
     }
 }
